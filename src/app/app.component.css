@@ -1,0 +1,9 @@
+.box-hight{
+    border: 1px solid #ccc;
+    height: 165px;
+    cursor: pointer;
+}
+
+.game-font{
+    font-size: 85px;
+}

@@ -1,0 +1,12 @@
+<div class="container mt-4 border border-dark">
+  <h1 class="text-center">XoX game</h1>
+  <h2 class="alert alert-dark text-center">{{message}}</h2>
+  <button class="btn btn-outline-dark w-100" (click)="newGame()">New Game</button>
+  <div class="row container mx-auto mt-3">
+    <div (click)="setMark(index)" class="col-md-4 text-center box-hight bg-dark" *ngFor="let game of games let index = index">
+      <span class="game-font text-success">{{game}}</span>
+    </div>
+  </div>
+  <br>
+  <button *ngFor="let m of moves let i = index" class="btn btn-dark rounded-1 mb-2 mx-2" (click)="returnSelectMove(i)">{{i+1}}. Move</button>
+</div>
